@@ -1,0 +1,25 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url('../img/intro-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 100%;
+
+    &__content {
+        width: 100%;
+        max-width: 21rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__body {
+        margin-bottom: 2.5rem;
+    }
+}

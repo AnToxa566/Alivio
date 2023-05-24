@@ -72,9 +72,17 @@ a {
   margin: 0 auto;
 }
 
+.first-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .header {
   position: sticky;
   top: 0;
+  left: 0;
+  width: 100%;
   padding: 1rem 0;
   background-color: white;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -87,6 +95,36 @@ a {
 .header__sing-in {
   color: #000;
   margin-right: 1.75rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.intro__content {
+  width: 100%;
+  max-width: 21rem;
+}
+.intro__title {
+  margin-bottom: 1rem;
+}
+.intro__body {
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  color: #01996D;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+}
+.title--h1 {
+  font-size: 3.25rem;
 }
 
 .link {
@@ -113,6 +151,7 @@ a {
 
 .btn {
   cursor: pointer;
+  text-align: center;
   color: white;
   background-color: #01996D;
   border: none;
