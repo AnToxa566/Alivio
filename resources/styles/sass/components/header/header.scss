@@ -1,0 +1,20 @@
+.header {
+    position: sticky;
+    top: 0;
+
+    padding: 1rem 0;
+
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__sing-in {
+        color: $black-text-color;
+        margin-right: 1.75rem;
+    }
+}

@@ -1,0 +1,23 @@
+.link {
+    position: relative;
+
+    text-decoration: none;
+    color: $dark-text-color;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        bottom: -0.25rem;
+        left: 0;
+
+        width: 0;
+        border-bottom: 2px solid $dark-text-color;
+
+        transition: width .2s ease-in;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}

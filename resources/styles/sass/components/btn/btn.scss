@@ -1,0 +1,26 @@
+.btn {
+    cursor: pointer;
+
+    color: white;
+    background-color: $green-color;
+
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 0.25rem;
+
+    font-size: $fs-regular;
+
+    transition: background-color .2s ease-in;
+
+    &--sm {
+        padding: 0.75rem 2.5rem;
+    }
+
+    &:hover {
+        background-color: $green-hover-color;
+    }
+
+    &:active {
+        background-color: $green-active-color;
+    }
+}
