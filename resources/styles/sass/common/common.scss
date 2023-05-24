@@ -3,3 +3,11 @@
 *::before {
     box-sizing: border-box;
 }
+
+html {
+    font-size: 20px;
+    font-family: $lato;
+    font-weight: $fw-regular;
+
+    color: $primary-text-color;
+}
