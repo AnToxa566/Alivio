@@ -1,8 +1,13 @@
 @import './container/container.scss';
-@import './first-screen/first-screen.scss';
-@import './header/header.scss';
-@import './intro/intro.scss';
+
 @import './title/title.scss';
 @import './link/link.scss';
 @import './nav/nav.scss';
 @import './btn/btn.scss';
+
+@import './first-screen/first-screen.scss';
+@import './header/header.scss';
+@import './intro/intro.scss';
+@import './steps/steps.scss';
+@import './how-it-works/how-it-works.scss';
+@import './feature/feature.scss';

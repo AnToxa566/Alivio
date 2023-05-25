@@ -1,0 +1,17 @@
+.how-it-works {
+    display: grid;
+    gap: 2rem;
+
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__header {
+        width: 100%;
+        max-width: 27rem;
+    }
+
+    &__text {
+        width: 100%;
+        max-width: 34rem;
+    }
+}

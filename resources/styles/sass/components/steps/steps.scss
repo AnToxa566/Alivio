@@ -1,0 +1,18 @@
+.steps {
+    margin: 5.5rem 0;
+
+    &__top {
+        margin-bottom: 9rem;
+    }
+
+    &__cards {
+        display: grid;
+        gap: 2rem;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        &-item:nth-child(2) {
+            margin-top: 12rem;
+        }
+    }
+}

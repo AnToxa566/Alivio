@@ -3,8 +3,25 @@
     font-family: $roboto;
 
     font-weight: $fw-bold;
+    line-height: 140%;
 
     &--h1 {
         font-size: $fs-h1;
+    }
+
+    &--h2 {
+        font-size: $fs-h2;
+    }
+
+    &--h3 {
+        font-size: $fs-h3;
+    }
+
+    &--black {
+        color: $black-text-color;
+    }
+
+    &--white {
+        color: $white-text-color;
     }
 }
