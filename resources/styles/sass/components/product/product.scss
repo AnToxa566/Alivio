@@ -1,0 +1,44 @@
+.product {
+    &__inner {
+        display: grid;
+        justify-content: space-between;
+
+        gap: 4rem;
+        grid-template-columns: 0.55fr 0.45fr;
+    }
+
+    &__subtitle {
+        margin-bottom: 0.5rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        margin-bottom: 2rem;
+    }
+
+    &__left {
+        position: relative;
+    }
+
+    &__img {
+        float: right;
+
+        position: relative;
+        z-index: 1;
+
+        width: 100%;
+        max-width: 90%;
+    }
+
+    &__card {
+        position: absolute;
+
+        bottom: -10%;
+        left: 0;
+
+        z-index: 2;
+    }
+}

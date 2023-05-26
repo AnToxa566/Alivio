@@ -69,6 +69,13 @@ a {
   text-decoration: none;
 }
 
+.home-page__steps {
+  margin: 5.5rem 0;
+}
+.home-page__product {
+  margin: 6rem 0 8rem 0;
+}
+
 .container {
   width: 100%;
   max-width: 1410px;
@@ -193,9 +200,6 @@ a {
   margin-bottom: 2.5rem;
 }
 
-.steps {
-  margin: 5.5rem 0;
-}
 .steps__top {
   margin-bottom: 9rem;
 }
@@ -262,10 +266,10 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 0.45fr 0.55fr;
 }
 .story__content {
-  width: 100%;
+  max-width: 100%;
 }
 .story__title {
   margin-bottom: 1.5rem;
@@ -274,8 +278,74 @@ a {
   margin-bottom: 3rem;
 }
 .story__video {
-  width: 100%;
+  max-width: 100%;
   border-radius: 0.75rem;
+}
+
+.product__inner {
+  display: grid;
+  justify-content: space-between;
+  gap: 4rem;
+  grid-template-columns: 0.55fr 0.45fr;
+}
+.product__subtitle {
+  margin-bottom: 0.5rem;
+}
+.product__title {
+  margin-bottom: 1rem;
+}
+.product__text {
+  margin-bottom: 2rem;
+}
+.product__left {
+  position: relative;
+}
+.product__img {
+  float: right;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 90%;
+}
+.product__card {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  z-index: 2;
+}
+
+.card {
+  color: #000;
+  background-color: white;
+  box-shadow: 0px 4px 18px rgba(165, 165, 165, 0.25);
+  padding: 1rem 3rem 1.5rem;
+  border-radius: 0.25rem;
+}
+.card__top {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.card__top-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+}
+.card__img {
+  max-width: 3rem;
+  max-height: 3rem;
+  border-radius: 50vh;
+}
+.card__name, .card__list-item {
+  font-size: 0.5rem;
+}
+.card__list {
+  list-style: disc inside;
+}
+.card__list-caption {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: "Roboto Slab", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,8 +10,8 @@
         <title>Alivio</title>
     </head>
 
-    <body>
-        <div class="full-screen">
+    <body class="home-page">
+        <div class="home-page__first-screen full-screen">
             <header class="full-screen__header header">
                 <div class="container">
                     <div class="header__inner">
@@ -42,12 +42,12 @@
                         <p class="intro__body">Everyone experiences stress in different days. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
                     </div>
     
-                    <button class="btn">Find Your Way</button>
+                    <button class="intro__btn btn">Find Your Way</button>
                 </div> <!-- container -->
             </section> <!-- intro -->
         </div> <!-- first-screen -->
 
-        <section class="steps">
+        <section class="steps home-page__steps">
             <div class="container">
                 <div class="steps__top how-it-works">
                     <div class="how-it-works__header">
@@ -101,7 +101,7 @@
             </div> <!-- container -->
         </section> <!-- steps -->
 
-        <section class="story">
+        <section class="story home-page__story">
             <div class="container">
                 <div class="story__inner">
                     <div class="story__content">
@@ -109,15 +109,52 @@
 
                         <p class="story__subtitle subtitle">See how well Alivio works in a real customer’s life.</p>
 
-                        <button class="btn">Let’s get started</button>
+                        <button class="story__btn btn">Let’s get started</button>
                     </div>
 
                     <video class="story__video" controls preload="none" poster="./resources/img/story/story-video-poster.jpg">
                         <source src="./resources/videos/video-placeholder.webm">
                         <source src="./resources/videos/video-placeholder.mp4">
                     </video>
-                </div>
-            </div>
-        </section>
+                </div> <!-- story__inner -->
+            </div> <!-- container -->
+        </section> <!-- story -->
+
+        <section class="product home-page__product">
+            <div class="container">
+                <div class="product__inner">
+                    <div class="product__left">
+                        <img class="product__img" src="./resources/img/product/product-1.png" alt="">
+
+                        <div class="product__card card">
+                            <div class="card__top">
+                                <div class="card__top-title">Customized For</div>
+
+                                <img class="card__img" src="./resources/img/product/product-1.png" alt="">
+
+                                <div class="card__name">Mikayla</div>
+                            </div>
+
+                            <div class="card__list-caption">Your custom contents</div>
+
+                            <ul class="card__list">
+                                <li class="card__list-item">Understand Your Stress</li>
+                                <li class="card__list-item">Anger Management</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product__content">
+                        <div class="product__subtitle subtitle">Our product</div>
+
+                        <h2 class="product__title title title--h2">You tell us your stress, We make your diary</h2>
+
+                        <p class="product__text">Everyone experiences it, and in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
+
+                        <button class="product__btn btn">Find Your Way</button>
+                    </div>
+                </div> <!-- product__inner -->
+            </div> <!-- container -->
+        </section> <!-- product -->
     </body>
 </html>
