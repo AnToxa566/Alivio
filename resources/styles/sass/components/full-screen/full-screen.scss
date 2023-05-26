@@ -1,6 +1,10 @@
-.first-screen {
+.full-screen {
     display: flex;
     flex-direction: column;
 
     height: 100vh;
+
+    &__content {
+        height: 100%;
+    }
 }

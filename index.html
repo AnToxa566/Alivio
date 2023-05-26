@@ -11,8 +11,8 @@
     </head>
 
     <body>
-        <div class="first-screen">
-            <header class="header">
+        <div class="full-screen">
+            <header class="full-screen__header header">
                 <div class="container">
                     <div class="header__inner">
                         <a href="#">
@@ -34,7 +34,7 @@
                 </div> <!-- container -->
             </header> <!-- header -->
     
-            <section class="intro">
+            <section class="full-screen__content intro">
                 <div class="container">
                     <div class="intro__content">
                         <h1 class="intro__title title title--h1">Be aware, Manage well.</h1>
@@ -47,11 +47,11 @@
             </section> <!-- intro -->
         </div> <!-- first-screen -->
 
-        <div class="steps">
+        <section class="steps">
             <div class="container">
                 <div class="steps__top how-it-works">
                     <div class="how-it-works__header">
-                        <p class="how-it-works__subtitle">How it works</p>
+                        <p class="how-it-works__subtitle subtitle">How it works</p>
 
                         <h2 class="how-it-works__title title title--h2">Understand & Release the stress in 3 steps</h2>
                     </div>
@@ -99,6 +99,25 @@
                     </div> <!-- steps__cards-item -->
                 </div> <!-- steps__cards -->
             </div> <!-- container -->
-        </div> <!-- steps -->
+        </section> <!-- steps -->
+
+        <section class="story">
+            <div class="container">
+                <div class="story__inner">
+                    <div class="story__content">
+                        <h2 class="story__title title title--h2 title--white">Let's hear about Kayla's success story</h2>
+
+                        <p class="story__subtitle subtitle">See how well Alivio works in a real customer’s life.</p>
+
+                        <button class="btn">Let’s get started</button>
+                    </div>
+
+                    <video class="story__video" controls preload="none" poster="./resources/img/story/story-video-poster.jpg">
+                        <source src="./resources/videos/video-placeholder.webm">
+                        <source src="./resources/videos/video-placeholder.mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

@@ -78,7 +78,7 @@ a {
 
 .title {
   color: #01996D;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
   line-height: 140%;
 }
@@ -96,6 +96,10 @@ a {
 }
 .title--white {
   color: #fff;
+}
+
+.subtitle {
+  font-size: 1.25rem;
 }
 
 .link {
@@ -141,10 +145,13 @@ a {
   background-color: #016a4c;
 }
 
-.first-screen {
+.full-screen {
   display: flex;
   flex-direction: column;
   height: 100vh;
+}
+.full-screen__content {
+  height: 100%;
 }
 
 .header {
@@ -174,7 +181,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100%;
 }
 .intro__content {
   width: 100%;
@@ -227,7 +233,7 @@ a {
 }
 .feature__count {
   font-size: 7.5rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", sans-serif;
   color: rgba(1, 153, 109, 0.2);
 }
 .feature__title {
@@ -242,6 +248,33 @@ a {
   width: 100%;
   max-width: 100%;
   height: auto;
+  border-radius: 0.75rem;
+}
+
+.story {
+  width: 100%;
+  color: #fff;
+  background-color: #245852;
+  padding: 10rem 0;
+}
+.story__inner {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.story__content {
+  width: 100%;
+}
+.story__title {
+  margin-bottom: 1.5rem;
+}
+.story__subtitle {
+  margin-bottom: 3rem;
+}
+.story__video {
+  width: 100%;
   border-radius: 0.75rem;
 }
 
