@@ -126,6 +126,12 @@ a {
 .link:hover::after {
   width: 100%;
 }
+.link--white {
+  color: #fff;
+}
+.link--white::after {
+  border-color: #fff;
+}
 
 .nav__link + .nav__link {
   margin-left: 3.5rem;
@@ -346,6 +352,25 @@ a {
   font-size: 0.75rem;
   font-weight: 700;
   font-family: "Roboto Slab", sans-serif;
+}
+
+.footer {
+  width: 100%;
+  padding: 5rem 0 7rem;
+  background-color: #245852;
+}
+.footer__title {
+  margin-bottom: 4rem;
+}
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+}
+.footer__nav-list-item {
+  font-size: 1.25rem;
+}
+.footer__nav-list-item + .footer__nav-list-item {
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

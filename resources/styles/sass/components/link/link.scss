@@ -20,4 +20,12 @@
     &:hover::after {
         width: 100%;
     }
+
+    &--white {
+        color: $white-text-color;
+
+        &::after {
+            border-color: $white-text-color;
+        }
+    }
 }
