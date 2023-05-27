@@ -9,8 +9,55 @@
 
         grid-template-columns: repeat(3, 1fr);
 
-        &-item:nth-child(2) {
-            margin-top: 12rem;
+        &-item {
+            width: 100%;
+            max-width: 19.5rem;
+            
+            &:nth-child(2) {
+                margin-top: 12rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+    .steps {
+        &__cards {
+            row-gap: 4rem;
+            grid-template-columns: repeat(2, 1fr);
+
+            &-item:nth-child(2) {
+                margin-top: 0;
+
+                grid-row-start: 1;
+                grid-row-end: 3;
+
+                grid-column-start: 2;
+
+                align-self: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    .steps {
+        &__cards {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+
+            justify-items: center;
+
+            &-item {
+                max-width: 100%;
+
+                &:nth-child(2) {
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+
+                    grid-column-start: 1;
+                }
+            }
         }
     }
 }

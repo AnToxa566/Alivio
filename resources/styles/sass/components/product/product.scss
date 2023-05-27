@@ -42,3 +42,36 @@
         z-index: 2;
     }
 }
+
+@media screen and (max-width: $breakpoint-lg) {
+    .product {
+        &__inner {
+            grid-template-columns: 1fr;
+        }
+
+        &__left {
+            grid-row-start: 2;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    .product {
+        &__content {
+            text-align: center;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__left {
+            justify-self: center;
+        }    
+
+        &__card {
+            position: relative;
+            bottom: 0;
+        }
+    }
+}

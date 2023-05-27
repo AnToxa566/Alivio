@@ -1,5 +1,6 @@
 .header {
-    position: sticky;
+    position: fixed;
+    z-index: 10;
 
     top: 0;
     left: 0;
@@ -17,8 +18,31 @@
         justify-content: space-between;
     }
 
+    &__nav {
+        width: 100%;
+        max-width: 28rem;
+
+        padding: 0 1rem;
+    }
+
+    &__right {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     &__sing-in {
         color: $black-text-color;
-        margin-right: 1.75rem;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+    .header {
+        &__nav,
+        &__right {
+            display: none;
+        }
     }
 }

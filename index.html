@@ -11,15 +11,21 @@
     </head>
 
     <body class="home-page">
+
+        <!-- FIRST SCREEN -->
+
         <div class="home-page__first-screen full-screen">
+
+            <!-- HEADER -->
+
             <header class="full-screen__header header">
                 <div class="container">
                     <div class="header__inner">
-                        <a href="#">
+                        <a class="header__logo-link" href="#">
                             <img class="header__logo" src="./resources/svg/alivio-logo.svg" alt="Alivio logo">
                         </a>
     
-                        <nav class="nav">
+                        <nav class="header__nav nav">
                             <a class="nav__link link" href="#">Why Alivio</a>
                             <a class="nav__link link" href="#">Solutions</a>
                             <a class="nav__link link" href="#">Community</a>
@@ -33,19 +39,25 @@
                     </div> <!-- header__inner -->
                 </div> <!-- container -->
             </header> <!-- header -->
+
     
+            <!-- INTRO -->
+
             <section class="full-screen__content intro">
                 <div class="container">
                     <div class="intro__content">
-                        <h1 class="intro__title title title--h1">Be aware, Manage well.</h1>
+                        <h1 class="intro__title title title--h1 element-animation">Be aware, Manage well.</h1>
     
                         <p class="intro__body">Everyone experiences stress in different days. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
-                    </div>
     
-                    <button class="intro__btn btn">Find Your Way</button>
+                        <button class="intro__btn btn">Find Your Way</button>
+                    </div>
                 </div> <!-- container -->
             </section> <!-- intro -->
         </div> <!-- first-screen -->
+
+
+        <!-- STEPS -->
 
         <section class="steps home-page__steps">
             <div class="container">
@@ -101,6 +113,9 @@
             </div> <!-- container -->
         </section> <!-- steps -->
 
+
+        <!-- STORY -->
+
         <section class="story home-page__story">
             <div class="container">
                 <div class="story__inner">
@@ -119,6 +134,9 @@
                 </div> <!-- story__inner -->
             </div> <!-- container -->
         </section> <!-- story -->
+
+
+        <!-- PRODUCT -->
 
         <section class="product home-page__product">
             <div class="container">
@@ -157,6 +175,9 @@
             </div> <!-- container -->
         </section> <!-- product -->
 
+
+        <!-- FOOTER -->
+
         <footer class="footer home-page__footer">
             <div class="container">
                 <h2 class="footer__title title title--h2 title--white">Alivio</h2>
@@ -178,9 +199,13 @@
                         <li class="footer__nav-list-item">
                             <a href="#" class="footer__nav-link link link--white">Pricing</a>
                         </li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
+                    </ul> <!-- footer__nav-list -->
+                </nav> <!-- footer__nav -->
+            </div> <!-- container -->
+        </footer> <!-- footer -->
+
+
+        <!-- JS -->
+        <script src="./resources/js/app.js"></script>
     </body>
 </html>

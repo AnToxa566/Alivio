@@ -15,3 +15,15 @@
         max-width: 34rem;
     }
 }
+
+@media screen and (max-width: $breakpoint-md) {
+    .how-it-works {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    .how-it-works {
+        text-align: center;
+    }
+}
