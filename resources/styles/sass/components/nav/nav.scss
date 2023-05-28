@@ -11,3 +11,18 @@
         }
     }
 }
+
+@media screen and (max-width: $breakpoint-md) {
+    .nav {
+        justify-content: flex-start;
+        flex-direction: column;
+
+        &__link {
+            margin: 1rem 0;
+
+            &+& {
+                margin-left: 0;
+            }
+        }
+    }
+}
