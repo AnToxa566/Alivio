@@ -10,12 +10,18 @@ html {
 }
 
 body {
+    position: relative;
+
     font-family: $lato;
     font-weight: $fw-regular;
 
     line-height: 150%;
 
     color: $primary-text-color;
+
+    &.lock {
+        overflow: hidden;
+    }
 }
 
 a {
